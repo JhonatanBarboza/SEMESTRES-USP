@@ -10,8 +10,5 @@
     ARVORE* Arvore_Criar (int tamanho_dados);
     void Arvore_Inserir (ARVORE* arvore, int elemento);
 
-    bool Arvore_Pertence (ARVORE* arvore, int elemento);
-    ARVORE* Arvore_Uniao (ARVORE* arvore_A,ARVORE* arvore_B); 
-    ARVORE* Arvore_Interseccao (ARVORE* arvore_A,ARVORE* arvore_B);
 
 #endif 
