@@ -1,4 +1,4 @@
-# Projeto completo: [link](https://github.com/JhonatanBarboza/Fisica)
+## Projeto completo: [link](https://github.com/JhonatanBarboza/Fisica)
 
 # Gravitação
 
@@ -24,6 +24,6 @@ A solução é aproximar e resolver as equações **numericamente**, calculando 
 ![3corpos](https://github.com/user-attachments/assets/0f2c852f-6932-4fa0-becf-8e9d1afa622b)
 
 ...
-### Projeto completo: [clique aqui] (https://github.com/JhonatanBarboza/Fisica)
+### Projeto completo: [clique aqui](https://github.com/JhonatanBarboza/Fisica)
 
 
