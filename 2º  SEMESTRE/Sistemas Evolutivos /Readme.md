@@ -6,6 +6,7 @@ Este repositório apresenta uma coleção de projetos dedicados à simulação d
 
 🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Simulacao_Ecossistema)
 
+---
 
 # Sistemas Evolutivos
 
@@ -18,3 +19,5 @@ Bem-vindo ao meu projeto, onde a ciência dos algoritmos evolutivos se encontra 
 ---
 
 🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Sistemas_Evolutivos)
+
+---
