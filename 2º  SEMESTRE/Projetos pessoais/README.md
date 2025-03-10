@@ -13,3 +13,10 @@ A simulação demonstra o movimento de planetas orbitando uma estrela, considera
 Esta simulação reproduz o comportamento de uma galáxia, com centenas de estrelas orbitando em torno de um núcleo central. As estrelas seguem padrões de movimento baseados na interação gravitacional entre elas, criando a icônica estrutura em espiral. A simulação busca capturar a dinâmica de rotação e distribuição das estrelas, oferecendo uma representação visual simples, porém envolvente, dos fenômenos que ocorrem em larga escala no universo.
 
 ![galaxia](https://github.com/user-attachments/assets/b07d6e6a-b890-490b-818b-36d1761ac2c7)
+
+
+---
+
+🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Simulacao_Universo)
+
+---
