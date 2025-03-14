@@ -20,3 +20,15 @@ Esta simulação reproduz o comportamento de uma galáxia, com centenas de estre
 🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Simulacao_Universo)
 
 ---
+
+# Jogo de Lançamento Oblicuo
+
+Este repositório contém um jogo interativo que simula o lançamento oblíquo de um objeto, explorando a influência da gravidade e da força viscosa no movimento do projétil. O objetivo do jogo é ajustar o ângulo e a velocidade inicial do lançamento para acertar um retângulo alvo na tela.
+
+![Image](https://github.com/user-attachments/assets/1769a548-6fc9-4519-be71-c45bc1235370)
+
+---
+
+🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Lancamento_obliquo/blob/main/README.md)
+
+---
