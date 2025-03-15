@@ -1,3 +1,18 @@
+# Simulação de Ecossistemas em C++ e OpenGL
+
+Este repositório apresenta uma coleção de projetos dedicados à simulação de ecossistemas, explorando a interação entre espécies e o ambiente, além de destacar a importância do equilíbrio ecológico. Cada projeto é uma representação visual e computacional de dinâmicas naturais, utilizando C++ e OpenGL para modelagem e animação.
+
+
+### Confira uma demonstração do projeto em ação!
+
+![Screencast from 2024-10-12 12-57-54](https://github.com/user-attachments/assets/d02b5099-1b02-460d-ace5-8689310e2782)
+
+---
+
+🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Simulacao_Ecossistema)
+
+---
+
 # Simulações Espaciais com C++ e OpenGL: Sistema Solar e Galáxias
 
 Este repositório apresenta simulações que oferecem uma experiência imersiva, permitindo visualizar de perto a interação gravitacional entre planetas, estrelas e outros corpos celestes. Cada projeto foi cuidadosamente desenvolvido para reproduzir com precisão os movimentos e padrões naturais que ocorrem em escalas astronômicas, transformando conceitos físicos em representações visuais fascinantes e acessíveis.
