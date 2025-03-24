@@ -1,12 +1,12 @@
-# Iniciação_Cientifica
+## Dev_Learn 🚀
+Repositório dedicado aos conhecimentos e projetos desenvolvidos durante o curso dev.learn do Code Lab. Aqui, compartilho minha jornada de aprendizado em desenvolvimento web, desde os fundamentos até a criação de projetos práticos.
 
-Neste repositório, compartilharei minha jornada e aprendizados durante minha iniciação científica, cujo tema é **"Many-Objectives Optimization: A Machine Learning Approach for Reducing the Number of Objectives"**. 
-
-Aqui, você encontrará códigos, experimentos, análises e documentações relacionadas ao desenvolvimento do projeto. O objetivo é explorar técnicas de Machine Learning para otimização de problemas com muitos objetivos, visando reduzir a complexidade e melhorar a eficiência das soluções.
+### 📌 Sobre o Curso
+O dev.learn é um curso introdutório de desenvolvimento web oferecido pelo Code Lab, projetado para quem deseja começar do zero!
 
 
 ---
 
-🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Iniciao_Cientifica)
+🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Dev_Learn)
 
 ---
