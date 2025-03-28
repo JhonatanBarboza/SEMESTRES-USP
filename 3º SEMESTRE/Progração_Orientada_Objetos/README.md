@@ -1,2 +1,11 @@
-<img src="https://user-images.githubusercontent.com/74038190/212284136-03988914-d899-44b4-b1d9-4eeccf656e44.gif" width="500">
-<br><br>
+# Programacao_orientada_objetos
+
+Programacao_Orientada_Objetos
+Este repositório é dedicado ao estudo e prática de Programação Orientada a Objetos (POO), contendo exercícios, projetos e exemplos desenvolvidos durante a disciplina na faculdade. Aqui, você encontrará implementações dos principais conceitos de POO, como classes, objetos, herança, polimorfismo, encapsulamento e abstração, aplicados em linguagens como Java e Python.
+
+
+---
+
+🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Programacao_orientada_objetos)
+
+---
