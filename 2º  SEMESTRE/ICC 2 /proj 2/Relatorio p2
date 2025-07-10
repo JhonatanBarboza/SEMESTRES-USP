@@ -1,0 +1,26 @@
+
+## Funcionamento do Código
+
+O programa em C implementa um jogo de palavras no qual o usuário precisa formar palavras válidas usando letras permitidas e uma letra obrigatória. Abaixo estão as principais funcionalidades:
+
+1. **carregar_palavras**: Carrega palavras válidas de um arquivo externo (`valid_words.txt`), considerando apenas aquelas que contêm a letra obrigatória e são formadas exclusivamente pelas letras permitidas. As palavras válidas são armazenadas na matriz `palavras_validas`.
+
+2. **verifica_letra_obrigatoria** e **verifica_letras**: Essas funções asseguram que uma palavra contém a letra obrigatória e só utiliza letras autorizadas, garantindo que apenas palavras permitidas pelo jogo sejam aceitas.
+
+3. **busca_binaria**: Realiza uma busca binária na lista `palavras_validas` para verificar se a palavra inserida pelo usuário já foi encontrada. A função retorna o índice da palavra se ela for encontrada ou -1 se não for.
+
+4. **palavra**: Verifica se a palavra inserida é válida, utilizando a função `busca_binaria` para garantir que a palavra não foi encontrada anteriormente. Caso seja uma nova palavra válida, o programa a marca como encontrada e atualiza o progresso.
+
+5. **progresso** e **solucao**: As funções exibem o progresso atual do usuário no jogo e, ao final, as palavras faltantes para completar o jogo, respectivamente.
+
+6. **main**: Implementa um loop interativo com o usuário, permitindo comandos como `inicio` (iniciar o jogo), `palavra` (inserir uma palavra), `progresso` (verificar o progresso) e `solucao` (exibir as palavras faltantes e encerrar o jogo).
+
+## Justificativa para o Uso de Busca Binária
+
+A busca binária é utilizada no programa para localizar rapidamente palavras na lista `palavras_validas`, que deve estar ordenada para que a busca funcione corretamente. Ela é vantajosa nesse contexto porque reduz o número de comparações necessárias para encontrar uma palavra. 
+
+Comparada à busca linear, que teria complexidade de tempo O(n), a busca binária diminui o tempo de busca para O(log n), uma melhoria significativa, especialmente quando o número de palavras válidas é grande (até o limite definido por `MAX_PALAVRAS`).
+
+## Conclusão
+
+O uso da busca binária é justificado pela sua eficiência em operações de busca frequentes no programa, garantindo uma resposta rápida ao usuário durante o jogo e um desempenho escalável ao lidar com uma grande lista de palavras.
