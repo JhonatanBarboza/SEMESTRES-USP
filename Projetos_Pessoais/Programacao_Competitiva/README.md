@@ -4,8 +4,13 @@ Este repositório é dedicado à prática e estudo de Programação Competitiva.
 
 <img src="https://user-images.githubusercontent.com/74038190/212284119-fbfd994d-8c2a-4a07-a75f-84e513833c1c.gif" width="400">
 
----
+## O que você encontrará aqui:
 
-🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Programacao_Competitiva)
+- Soluções de problemas: Códigos-fonte em C++.
 
----
+- Explicações: Breves descrições das estratégias e algoritmos utilizados.
+
+- Dicas e boas práticas: Comentários no código e dicas para otimização.
+
+Sinta-se à vontade para explorar, contribuir ou sugerir melhorias. Vamos juntos evoluir na arte da programação competitiva!
+
