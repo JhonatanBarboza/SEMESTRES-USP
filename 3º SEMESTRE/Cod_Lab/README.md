@@ -1,5 +1,5 @@
-## Dev_Learn 🚀
-Repositório dedicado aos conhecimentos e projetos desenvolvidos durante o curso dev.learn do Code Lab. Aqui, compartilho minha jornada de aprendizado em desenvolvimento web, desde os fundamentos até a criação de projetos práticos.
+# Cod Lab 🚀
+Repositório dedicado a compartilhar minhas contribuições para o grupo Cod Lab. Aqui você encontrará projetos, atividades, desafios resolvidos e materiais desenvolvidos ao longo da minha participação no grupo. O objetivo é documentar o aprendizado, trocar conhecimento e colaborar com o crescimento coletivo da equipe.
 
 ---
 
