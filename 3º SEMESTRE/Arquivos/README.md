@@ -1,1 +1,9 @@
-<img src="https://user-images.githubusercontent.com/74038190/212741999-016fddbd-617a-4448-8042-0ecf907aea25.gif" width="500" alt="NUX_Octodex">
+# ARQUIVOS  
+
+Neste repositório, compartilhamos nossos trabalhos da disciplina **SCC0215 - Organização de Arquivos (2025)**, ministrada pela **Profa. Dra. Cristina Dutra de Aguiar** no ICMC-USP. Os projetos foram desenvolvidos em linguagem **C** e abordam a manipulação de arquivos binários, estruturas de dados dinâmicas e indexação, seguindo rigorosamente as especificações dos três trabalhos práticos
+
+---
+
+🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Arquivos)
+
+---
