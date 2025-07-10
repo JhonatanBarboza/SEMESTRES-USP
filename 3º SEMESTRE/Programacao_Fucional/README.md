@@ -1,9 +1,8 @@
-# Programação Funcional 
+# Programacao_Funcional
 
-Repositório dedicado ao estudo e prática dos paradigmas da Programação Funcional. Aqui você encontrará:
+Repositório dedicado ao estudo e prática dos paradigmas da Programação Funcional. Aqui você encontrará:  
 
----
-
-🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Programacao_Funcional)
-
----
+- Exemplos de código em linguagens funcionais como Haskell.  
+- Implementações de conceitos fundamentais, como imutabilidade, funções de alta ordem e recursão.  
+- Exercícios e desafios para aprimorar o raciocínio funcional.  
+- Comparações entre abordagens funcionais e imperativas.  
