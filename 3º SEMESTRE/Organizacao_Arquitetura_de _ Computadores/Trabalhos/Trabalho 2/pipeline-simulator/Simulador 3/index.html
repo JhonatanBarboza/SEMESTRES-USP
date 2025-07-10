@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Pipeline RISC-V</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Simulador de Pipeline RISC-V</h1>
+        
+        <div class="main-content">
+            <div class="code-panel">
+                <h2>💻 Código Assembly RISC-V</h2>
+                <textarea id="codeEditor" placeholder="Digite seu código RISC-V Assembly aqui...
+Exemplo:
+addi x1, x0, 10
+addi x2, x0, 20
+add x3, x1, x2
+sub x4, x3, x1
+sw x4, 0(x0)
+lw x5, 0(x0)">addi x1, x0, 10
+addi x2, x0, 20
+add x3, x1, x2
+sub x4, x3, x1
+sw x4, 0(x0)
+lw x5, 0(x0)</textarea>
+                
+                <div class="controls">
+                    <button class="btn-primary" onclick="startSimulation()">▶️ Carregar</button>
+                    <button class="btn-success" onclick="stepForward()" id="stepBtn" disabled>⏭️ Próximo Ciclo</button>
+                    <button class="btn-secondary" onclick="resetSimulation()">🔄 Reset</button>
+                    <button class="btn-warning" onclick="toggleAutoRun()" id="autoBtn">⚡ Auto Executar</button>
+                </div>
+            </div>
+
+            <div class="pipeline-visual">
+                <h2>🔄 Pipeline Visualization</h2>
+                <div class="cycle-counter" id="cycleCounter">Ciclo: 0</div>
+                
+                <div class="pipeline-stage" id="stage-if">
+                    <div class="stage-name">IF</div>
+                    <div class="stage-content" id="if-content">Instruction Fetch</div>
+                </div>
+                
+                <div class="pipeline-stage" id="stage-id">
+                    <div class="stage-name">ID</div>
+                    <div class="stage-content" id="id-content">Instruction Decode</div>
+                </div>
+                
+                <div class="pipeline-stage" id="stage-ex">
+                    <div class="stage-name">EX</div>
+                    <div class="stage-content" id="ex-content">Execute</div>
+                </div>
+                
+                <div class="pipeline-stage" id="stage-mem">
+                    <div class="stage-name">MEM</div>
+                    <div class="stage-content" id="mem-content">Memory Access</div>
+                </div>
+                
+                <div class="pipeline-stage" id="stage-wb">
+                    <div class="stage-name">WB</div>
+                    <div class="stage-content" id="wb-content">Write Back</div>
+                </div>
+
+                <div id="hazardInfo"></div>
+            </div>
+        </div>
+
+        <div class="status-panel">
+            <div class="status-box">
+                <h3>📊 Registradores</h3>
+                <div class="registers-grid" id="registersGrid"></div>
+            </div>
+            
+            <div class="status-box">
+                <h3>💾 Memória de Instruções</h3>
+                <div class="instruction-memory" id="instructionMemory"></div>
+                
+                <div class="memory-header">
+                    <h3>💾 Memória de Dados</h3>
+                    <span style="font-size: 12px; color: #718096;">Endereço : Valor : Hexadecimal</span>
+                </div>
+                <div class="data-memory" id="dataMemory">
+                    <div class="memory-line">
+                        <span class="memory-address">0x000</span>
+                        <span class="memory-value">0</span>
+                        <span class="memory-hex">0x00000000</span>
+                    </div>
+                </div>
+                
+                <div class="memory-legend">
+                    <div class="legend-item">
+                        <div class="legend-color legend-read"></div>
+                        <span>Leitura</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color legend-write"></div>
+                        <span>Escrita</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color legend-modified"></div>
+                        <span>Modificado</span>
+                    </div>
+                </div>
+                <br>
+                <h3 style="margin-top: 20px;">🗄️ Performance</h3>
+                <div id="performanceStats">
+                    <div>Instruções: <span id="instCount">0</span></div>
+                    <div>Ciclos: <span id="cycleCount">0</span></div>
+                    <div>Stalls: <span id="stallCount">0</span></div>
+                    <div>CPI: <span id="cpiValue">0.00</span></div>
+                </div>
+      
+            </div>
+        </div>
+
+        <div class="help-section">
+            <h2>📚 Ajuda e Instruções Suportadas</h2>
+            
+            <details>
+                <summary>Instruções Suportadas</summary>
+                <div class="help-content">
+                    <strong>Instruções Tipo R:</strong>
+                    <ul>
+                        <li><code>add rd, rs1, rs2</code> - Adição</li>
+                        <li><code>sub rd, rs1, rs2</code> - Subtração</li>
+                        <li><code>mul rd, rs1, rs2</code> - Multiplicação</li>
+                        <li><code>div rd, rs1, rs2</code> - Divisão</li>
+                        <li><code>and rd, rs1, rs2</code> - AND lógico</li>
+                        <li><code>or rd, rs1, rs2</code> - OR lógico</li>
+                        <li><code>xor rd, rs1, rs2</code> - XOR lógico</li>
+                    </ul>
+                    <br>
+                    <strong>Instruções Tipo I:</strong>
+                    <ul>
+                        <li><code>addi rd, rs1, imm</code> - Adição com imediato</li>
+                        <li><code>lw rd, offset(rs1)</code> - Load word</li>
+                    </ul>
+                    <br>
+                    <strong>Instruções Tipo S:</strong>
+                    <ul>
+                        <li><code>sw rs2, offset(rs1)</code> - Store word</li>
+                    </ul>
+                    <br>
+                    <strong>Instruções de Branch:</strong>
+                    <ul>
+                        <li><code>beq rs1, rs2, label</code> - Branch if equal</li>
+                        <li><code>bne rs1, rs2, label</code> - Branch if not equal</li>
+                    </ul>
+                    <br>
+                    <strong>Instruções de Jump:</strong>
+                    <ul>
+                        <li><code>jal rd, label</code> - Jump and link</li>
+                        <li><code>jalr rd, rs1</code> - Jump and link register</li>
+                    </ul>
+                    <br>    
+                </div>
+            </details>
+            
+            <details>
+                <summary>Hazards Detectados</summary>
+                <div class="help-content">
+                    <strong>Data Hazards:</strong>
+                    <ul>
+                        <li>RAW (Read After Write) - Detectado e resolvido com forwarding ou stalls</li>
+                        <li>Load-Use - Requer stall obrigatório de 1 ciclo</li>
+                    </ul>
+                    
+                    <strong>Control Hazards:</strong>
+                    <ul>
+                        <li>Branch - Flush do pipeline quando branch é tomado</li>
+                    </ul>
+                </div>
+            </details>
+            
+            <details>
+                <summary>Como Usar</summary>
+                <div class="help-content">
+                    <ol>
+                        <li>Digite seu código RISC-V Assembly na área de texto</li>
+                        <li>Clique em "Executar" para compilar o código</li>
+                        <li>Use "Próximo Ciclo" para avançar step-by-step</li>
+                        <li>Use "Auto Executar" para execução automática</li>
+                        <li>Observe os hazards sendo detectados e resolvidos em tempo real</li>
+                    </ol>
+                </div>
+            </details>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

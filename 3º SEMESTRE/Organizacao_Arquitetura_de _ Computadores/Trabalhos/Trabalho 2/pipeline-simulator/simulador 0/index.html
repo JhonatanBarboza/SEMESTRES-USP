@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <!-- Adicione esta div no seu HTML onde o pipeline será renderizado -->
+    <meta charset="UTF-8">
+    <title>Simulador de Pipeline RISC-V</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .pipeline { display: flex; margin-bottom: 10px; }
+        .stage { width: 120px; height: 60px; border: 2px solid #333; 
+                 margin: 5px; display: flex; justify-content: center; 
+                 align-items: center; background: #f0f0f0; }
+        .bubble { background: #ccc; }
+        .hazard { border-color: red; }
+        .forwarding { border-color: blue; }
+        .code { margin-top: 20px; }
+        button { padding: 8px 12px; margin-right: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Simulador de Pipeline RISC-V</h1>
+    
+    <div class="controls">
+        <button id="step">Próximo Ciclo</button>
+        <button id="reset">Reiniciar</button>
+        <select id="mode">
+            <option value="base">Pipeline Básico</option>
+            <option value="forwarding">Com Forwarding</option>
+            <option value="stall">Com Stalls</option>
+        </select>
+    </div>
+    
+    <div id="pipeline-container"></div>
+    
+    <div class="code">
+        <h3>Código de Exemplo:</h3>
+        <pre>1. ADD  X1, X2, X3
+2. SUB  X4, X1, X5   ← Hazard de dados!
+3. LW   X6, 0(X1)
+4. BEQ  X1, X0, LABEL ← Hazard de controle!</pre>
+    </div>
+    
+    <div class="explanations">
+        <h3>Explicação:</h3>
+        <p id="explanation">Clique em "Próximo Ciclo" para avançar.</p>
+    </div>
+    
+    <script src="pipeline.js"></script>
+    <div id="pipeline-container" class="pipeline-container"></div>
+
+</body>
+</html>
+
+
