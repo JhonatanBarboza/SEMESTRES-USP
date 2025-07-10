@@ -1,6 +1,0 @@
-
-    // Atualiza o byteoffset
-    Head_UpdateProxByteOffset(header, 276, 1);
-    
-    
-
