@@ -4,6 +4,6 @@ Este repositório documenta minha jornada de aprendizado e implementação de al
 
 ---
 
-🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Algoritimos_Avancados)
+🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Algoritmos_Avancados)
 
 ---
