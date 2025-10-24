@@ -38,3 +38,36 @@ Este repositório contém um jogo interativo que simula o lançamento oblíquo d
 
 ---
 
+# Simulador completo de pipeline RISC-V
+
+O simulador é uma ferramenta educacional completa que demonstra visualmente como funciona um pipeline de processador, incluindo os desafios e soluções para hazards. É perfeito para entender conceitos de arquitetura de computadores!
+
+
+### Confira uma demonstração do projeto em ação!
+
+![Screencast from 2024-10-12 12-57-54](![Image](https://github.com/user-attachments/assets/86a6977a-eb6b-4dad-968b-b89965780f65))
+
+---
+
+🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Pipeline-RISC-V)
+
+---
+
+
+
+
+
+# Titulo
+
+Descrição
+
+
+### Confira uma demonstração do projeto em ação!
+
+![Screencast from 2024-10-12 12-57-54](https://github.com/user-attachments/assets/d02b5099-1b02-460d-ace5-8689310e2782)
+
+---
+
+🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Simulacao_Ecossistema)
+
+---
