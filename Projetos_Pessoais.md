@@ -56,6 +56,18 @@ Este repositório contém implementações e visualizações relacionadas ao pro
 
 ---
 
+# Grafos
+
+Repositório dedicado às atividades, implementações e estudos realizados durante a disciplina de Grafos, oferecida no curso de Ciência da Computação pelo ICMC/USP. Neste espaço, você encontrará algoritmos clássicos, projetos práticos e outras contribuições voltadas ao aprendizado e aplicação de estruturas baseadas em grafos.
+
+![Image](https://github.com/user-attachments/assets/61076b20-8727-46cd-8e3e-33e9091c7cfd)
+
+---
+
+🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Grafos)
+
+---
+
 # Jogo de Lançamento Oblicuo
 
 Este repositório contém um jogo interativo que simula o lançamento oblíquo de um objeto, explorando a influência da gravidade e da força viscosa no movimento do projétil. O objetivo do jogo é ajustar o ângulo e a velocidade inicial do lançamento para acertar um retângulo alvo na tela.
