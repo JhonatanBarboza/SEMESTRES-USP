@@ -26,6 +26,36 @@ Este repositório apresenta simulações que oferecem uma experiência imersiva,
 
 ---
 
+# Simulador completo de pipeline RISC-V
+
+O simulador é uma ferramenta educacional completa que demonstra visualmente como funciona um pipeline de processador, incluindo os desafios e soluções para hazards. É perfeito para entender conceitos de arquitetura de computadores!
+
+
+### Confira uma demonstração do projeto em ação!
+
+![Image](https://github.com/user-attachments/assets/00fe0a1a-5082-42a3-8e52-3d430ea245fc)
+
+---
+
+🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Pipeline-RISC-V)
+
+---
+
+
+# Problema do Fecho Convexo e Algoritmo de Andrew
+
+Este repositório contém implementações e visualizações relacionadas ao problema do Fecho Convexo, um conceito fundamental em geometria computacional.
+
+### Confira uma demonstração do projeto em ação!
+
+![Image](https://github.com/user-attachments/assets/a6b2a25a-f217-4c53-8a06-dbfc7c588f98)
+
+---
+
+🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Algoritmos_Avancados/tree/main/Exercicios%20/ex6)
+
+---
+
 # Jogo de Lançamento Oblicuo
 
 Este repositório contém um jogo interativo que simula o lançamento oblíquo de um objeto, explorando a influência da gravidade e da força viscosa no movimento do projétil. O objetivo do jogo é ajustar o ângulo e a velocidade inicial do lançamento para acertar um retângulo alvo na tela.
@@ -35,39 +65,5 @@ Este repositório contém um jogo interativo que simula o lançamento oblíquo d
 ---
 
 🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Lancamento_obliquo/blob/main/README.md)
-
----
-
-# Simulador completo de pipeline RISC-V
-
-O simulador é uma ferramenta educacional completa que demonstra visualmente como funciona um pipeline de processador, incluindo os desafios e soluções para hazards. É perfeito para entender conceitos de arquitetura de computadores!
-
-
-### Confira uma demonstração do projeto em ação!
-
-![Screencast from 2024-10-12 12-57-54](![Image](https://github.com/user-attachments/assets/86a6977a-eb6b-4dad-968b-b89965780f65))
-
----
-
-🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Pipeline-RISC-V)
-
----
-
-
-
-
-
-# Titulo
-
-Descrição
-
-
-### Confira uma demonstração do projeto em ação!
-
-![Screencast from 2024-10-12 12-57-54](https://github.com/user-attachments/assets/d02b5099-1b02-460d-ace5-8689310e2782)
-
----
-
-🔗 Confira o projeto completo no GitHub: [Clique aqui](https://github.com/JhonatanBarboza/Simulacao_Ecossistema)
 
 ---
