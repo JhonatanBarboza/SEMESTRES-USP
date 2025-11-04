@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusTimer - Pomodoro</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="app-header">
+            <h1><i class="fas fa-tomato"></i> FocusTimer</h1>
+        </header>
+
+        <main class="app-main">
+            <div class="timer-container">
+                <div class="timer-display" id="cronometro">25:00</div>
+                <div class="timer-controls">
+                    <button id="inicia-pausa" class="btn-primary">
+                        <i class="fas fa-play"></i> Iniciar
+                    </button>
+                    <button id="reset-timer" class="btn-secondary">
+                        <i class="fas fa-redo"></i> Resetar
+                    </button>
+                </div>
+                
+                <div class="mode-selector" id="botoes">
+                    <button class="mode-btn active" data-mode="pomodoro">
+                        <i class="fas fa-clock"></i> Pomodoro
+                    </button>
+                    <button class="mode-btn" data-mode="pausa-curta">
+                        <i class="fas fa-coffee"></i> Pausa Curta
+                    </button>
+                    <button class="mode-btn" data-mode="pausa-longa">
+                        <i class="fas fa-couch"></i> Pausa Longa
+                    </button>
+                </div>
+            </div>
+
+            <div class="settings-container" id="configuracoes">
+                <h2><i class="fas fa-cog"></i> Configurações</h2>
+                
+                <div class="setting-group">
+                    <label for="pomodoro">
+                        <i class="fas fa-clock"></i> Pomodoro (minutos):
+                    </label>
+                    <input type="number" id="pomodoro" value="25" min="1" max="60">
+                </div>
+                
+                <div class="setting-group">
+                    <label for="pausa-curta">
+                        <i class="fas fa-coffee"></i> Pausa Curta (minutos):
+                    </label>
+                    <input type="number" id="pausa-curta" value="5" min="1" max="60">
+                </div>
+                
+                <div class="setting-group">
+                    <label for="pausa-longa">
+                        <i class="fas fa-couch"></i> Pausa Longa (minutos):
+                    </label>
+                    <input type="number" id="pausa-longa" value="15" min="1" max="60">
+                </div>
+            </div>
+
+            <button id="mostra-config" class="btn-secondary">
+                <i class="fas fa-cog"></i> Configurações
+            </button>
+        </main>
+
+        <footer class="app-footer">
+            <div class="pomodoro-count">
+                <span id="contador-numero">0</span> Pomodoros completos
+            </div>
+        </footer>
+    </div>
+
+    <audio id="alarme" src="sounds/notification.mp3" preload="auto"></audio>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
