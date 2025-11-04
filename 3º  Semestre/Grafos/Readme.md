@@ -1,4 +1,4 @@
-## Grafos 📊🔗
+## Grafos
 
 Repositório dedicado às atividades, implementações e estudos realizados durante a disciplina de **Grafos**, oferecida no curso de Ciência da Computação pelo ICMC/USP.
 
